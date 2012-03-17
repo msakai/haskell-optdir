@@ -2,9 +2,10 @@ Name:           OptDir
 Version:        0.0.1
 Cabal-Version:  >= 1.8
 License:        BSD3
+License-file:   LICENSE
 Author:         Masahiro Sakai
 Maintainer:     Masahiro Sakai <masahiro.sakai@gmail.com>
-Category:       Algorithms
+Category:       Data, Optimization, Optimisation
 Synopsis:       The OptDir type for representing optimization directions.
 Description:    The OptDir type for representing optimization directions.
 Stability:      stable
