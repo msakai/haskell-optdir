@@ -22,6 +22,7 @@ module Data.OptDir
 import Data.Ix
 import Data.Typeable
 import Data.Generics
+import Data.Hashable
 
 {-|
 The 'OptDir' type represents optimization directions.
@@ -30,3 +31,5 @@ data OptDir
   = OptMin -- ^ minimization 
   | OptMax -- ^ maximization
   deriving (Bounded, Enum, Eq, Data, Ord, Read, Show, Ix, Typeable)
+
+instance Hashable OptDir where hashWithSalt = hashUsing fromEnum
