@@ -8,7 +8,7 @@
 -- 
 -- Maintainer  :  masahiro.sakai@gmail.com
 -- Stability   :  stable
--- Portability :  portable
+-- Portability :  non-portable (DeriveDataTypeable)
 --
 -- The OptDir type for representing optimization directions.
 --
