@@ -10,6 +10,9 @@ Synopsis:       The OptDir type for representing optimization directions.
 Description:    The OptDir type for representing optimization directions.
 Stability:      stable
 Build-Type:	Simple
+Extra-Source-Files:
+   README.md
+   .travis.yml
 
 Source-Repository head
   type:     git
