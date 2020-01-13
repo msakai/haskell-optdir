@@ -22,5 +22,5 @@ Library
   Hs-Source-Dirs:     src
   Exposed-Modules:    Data.OptDir
   Default-Language:   Haskell2010
-  Other-Extensions:   DeriveDataTypeable, CPP
+  Other-Extensions:   DeriveDataTypeable, DeriveGeneric, CPP
   GHC-Options:        -Wall
