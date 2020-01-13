@@ -1,5 +1,6 @@
-{-# LANGUAGE DeriveDataTypeable, CPP #-}
-
+{-# LANGUAGE CPP #-}
+{-# LANGUAGE DeriveDataTypeable #-}
+{-# LANGUAGE DeriveGeneric #-}
 -----------------------------------------------------------------------------
 -- |
 -- Module      :  Data.OptDir
@@ -8,7 +9,7 @@
 -- 
 -- Maintainer  :  masahiro.sakai@gmail.com
 -- Stability   :  stable
--- Portability :  non-portable (DeriveDataTypeable, CPP)
+-- Portability :  non-portable
 --
 -- The OptDir type for representing optimization directions.
 --
@@ -21,8 +22,9 @@ module Data.OptDir
 
 import Data.Ix
 import Data.Typeable
-import Data.Generics
+import Data.Generics hiding (Generic)
 import Data.Hashable
+import GHC.Generics
 
 {-|
 The 'OptDir' type represents optimization directions.
@@ -30,7 +32,7 @@ The 'OptDir' type represents optimization directions.
 data OptDir
   = OptMin -- ^ minimization 
   | OptMax -- ^ maximization
-  deriving (Bounded, Enum, Eq, Data, Ord, Read, Show, Ix, Typeable)
+  deriving (Bounded, Enum, Eq, Data, Ord, Read, Show, Ix, Generic, Typeable)
 
 instance Hashable OptDir where hashWithSalt = hashUsing fromEnum
 
